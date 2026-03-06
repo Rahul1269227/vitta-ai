@@ -1,0 +1,1122 @@
+# Transaction Category Taxonomy
+# Comprehensive classification system for financial transactions
+
+version: "1.0.0"
+last_updated: "2025-11-11"
+
+categories:
+  - name: "Food & Dining"
+    id: "food_dining"
+    description: "Restaurants, food delivery, cafes, and dining expenses"
+    mcc_codes:
+      - "5812"  # Restaurants
+      - "5814"  # Fast Food
+      - "5813"  # Drinking Places (Bars, Taverns)
+      - "5811"  # Caterers
+    subcategories:
+      - "Food Delivery"
+      - "Restaurants"
+      - "Cafes & Coffee"
+      - "Fast Food"
+      - "Cloud Kitchen"
+    keywords:
+      - "zomato"
+      - "swiggy"
+      - "chipotle"
+      - "restaurant"
+      - "cafe"
+      - "dining"
+      - "eatery"
+      - "dominos"
+      - "pizza"
+      - "mcdonalds"
+      - "kfc"
+      - "subway"
+      - "starbucks"
+      - "chaayos"
+      - "haldirams"
+    patterns:
+      - "(?i)zomato.*"
+      - "(?i)swiggy.*"
+      - "(?i).*restaurant.*"
+      - "(?i).*cafe.*"
+      - "(?i).*pizza.*"
+      - "(?i).*food.*delivery.*"
+
+  - name: "Groceries"
+    id: "groceries"
+    description: "Supermarkets, grocery stores, and daily essentials"
+    mcc_codes:
+      - "5411"  # Grocery Stores, Supermarkets
+      - "5422"  # Freezer and Locker Meat Provisioners
+      - "5451"  # Dairy Products Stores
+      - "5462"  # Bakeries
+      - "5499"  # Miscellaneous Food Stores
+    subcategories:
+      - "Supermarkets"
+      - "Online Grocery"
+      - "Local Stores"
+      - "Wholesale"
+    keywords:
+      - "bigbasket"
+      - "blinkit"
+      - "zepto"
+      - "dunzo"
+      - "grofers"
+      - "dmart"
+      - "reliance fresh"
+      - "more"
+      - "whole foods"
+      - "trader joe's"
+      - "walmart"
+      - "grocery"
+      - "supermarket"
+      - "provisions"
+      - "jiomart"
+      - "amazon pantry"
+    patterns:
+      - "(?i)big.*basket.*"
+      - "(?i)blinkit.*"
+      - "(?i)zepto.*"
+      - "(?i).*grocery.*"
+      - "(?i)dmart.*"
+
+  - name: "Transport"
+    id: "transport"
+    description: "Local transportation, cabs, auto, public transport"
+    mcc_codes:
+      - "4111"  # Local/Suburban Commuter Passenger Transportation
+      - "4112"  # Passenger Railways
+      - "4121"  # Taxicabs and Limousines
+      - "4131"  # Bus Lines
+      - "4784"  # Tolls and Bridge Fees
+      - "4789"  # Transportation Services
+      - "7511"  # Truck Rentals
+      - "7523"  # Parking Lots, Garages
+      - "7549"  # Towing Services
+    subcategories:
+      - "Cab Services"
+      - "Auto/Rickshaw"
+      - "Public Transport"
+      - "Parking"
+      - "Tolls"
+    keywords:
+      - "uber"
+      - "ola"
+      - "rapido"
+      - "metro"
+      - "bus"
+      - "taxi"
+      - "cab"
+      - "auto"
+      - "rickshaw"
+      - "parking"
+      - "toll"
+      - "fastag"
+    patterns:
+      - "(?i)uber(?!.*eat).*"
+      - "(?i)ola(?!.*electric).*"
+      - "(?i)rapido.*"
+      - "(?i).*metro.*"
+      - "(?i).*parking.*"
+      - "(?i).*toll.*"
+      - "(?i)fastag.*"
+
+  - name: "Travel"
+    id: "travel"
+    description: "Travel bookings, hotels, flights, trains"
+    mcc_codes:
+      - "3000"  # Airlines (general)
+      - "3001"  # American Airlines
+      - "3004"  # Air India
+      - "3050"  # Low-cost carriers
+      - "4411"  # Steamships and Cruise Lines
+      - "4511"  # Airlines
+      - "4722"  # Travel Agencies and Tour Operators
+      - "7011"  # Hotels, Motels, Resorts
+      - "7012"  # Timeshares
+      - "7032"  # Sporting and Recreational Camps
+      - "7033"  # Trailer Parks and Campgrounds
+    subcategories:
+      - "Flights"
+      - "Hotels"
+      - "Trains"
+      - "Bus Travel"
+      - "Travel Packages"
+    keywords:
+      - "makemytrip"
+      - "goibibo"
+      - "irctc"
+      - "redbus"
+      - "oyo"
+      - "airbnb"
+      - "hotel"
+      - "flight"
+      - "airline"
+      - "indigo"
+      - "spicejet"
+      - "air india"
+      - "booking.com"
+      - "agoda"
+      - "yatra"
+      - "cleartrip"
+    patterns:
+      - "(?i)makemytrip.*"
+      - "(?i)goibibo.*"
+      - "(?i)irctc.*"
+      - "(?i).*hotel.*"
+      - "(?i).*flight.*"
+      - "(?i).*airline.*"
+
+  - name: "Fuel"
+    id: "fuel"
+    description: "Petrol, diesel, CNG, and fuel stations"
+    mcc_codes:
+      - "5541"  # Service Stations
+      - "5542"  # Automated Fuel Dispensers
+      - "5983"  # Fuel Dealers (Non-Automotive)
+    subcategories:
+      - "Petrol"
+      - "Diesel"
+      - "CNG"
+      - "Electric Charging"
+    keywords:
+      - "hpcl"
+      - "iocl"
+      - "bpcl"
+      - "shell"
+      - "reliance petrol"
+      - "essar"
+      - "petrol pump"
+      - "fuel"
+      - "gas station"
+      - "cng"
+    patterns:
+      - "(?i)hpcl.*"
+      - "(?i)iocl.*"
+      - "(?i)bpcl.*"
+      - "(?i).*petrol.*"
+      - "(?i).*fuel.*"
+      - "(?i).*cng.*"
+
+  - name: "Rent"
+    id: "rent"
+    description: "Housing expenses including rent, mortgage, home loans, and property payments"
+    mcc_codes:
+      - "6513"  # Real Estate Agents and Managers - Rentals
+    subcategories:
+      - "Rent"
+      - "Mortgage/Home Loan"
+      - "PG/Hostel"
+      - "Property Tax"
+      - "HOA/Maintenance"
+    keywords:
+      - "rent"
+      - "lease"
+      - "landlord"
+      - "housing"
+      - "flat rent"
+      - "apartment"
+      - "mortgage"
+      - "home loan"
+      - "housing loan"
+      - "emi home"
+      - "property tax"
+      - "house tax"
+      - "hoa"
+      - "society maintenance"
+      - "apartment maintenance"
+    patterns:
+      - "(?i).*rent.*"
+      - "(?i).*lease.*"
+      - "(?i).*landlord.*"
+      - "(?i).*mortgage.*"
+      - "(?i).*home.*loan.*"
+      - "(?i).*housing.*loan.*"
+      - "(?i).*property.*tax.*"
+      - "(?i).*house.*tax.*"
+
+  - name: "Shopping"
+    id: "shopping"
+    description: "Online and offline shopping, e-commerce"
+    mcc_codes:
+      - "5311"  # Department Stores
+      - "5399"  # Miscellaneous General Merchandise
+      - "5611"  # Men's and Boys' Clothing
+      - "5621"  # Women's Ready-to-Wear
+      - "5651"  # Family Clothing Stores
+      - "5691"  # Men's and Women's Clothing
+      - "5732"  # Electronics Stores
+      - "5815"  # Digital Goods Media
+      - "5941"  # Sporting Goods Stores
+      - "5942"  # Book Stores
+      - "5944"  # Jewelry Stores
+      - "5945"  # Hobby, Toy, and Game Shops
+      - "5999"  # Miscellaneous Retail Stores
+    subcategories:
+      - "Online Shopping"
+      - "Clothing & Fashion"
+      - "Electronics"
+      - "Home & Kitchen"
+      - "Books & Media"
+    keywords:
+      - "amazon"
+      - "flipkart"
+      - "myntra"
+      - "ajio"
+      - "nykaa"
+      - "meesho"
+      - "snapdeal"
+      - "shoppers stop"
+      - "lifestyle"
+      - "westside"
+      - "max fashion"
+      - "pantaloons"
+      - "shopping"
+      - "online order"
+    patterns:
+      - "(?i)amazon(?!.*(prime|pantry|music|video|kindle)).*"
+      - "(?i)flipkart.*"
+      - "(?i)myntra.*"
+      - "(?i)ajio.*"
+      - "(?i)nykaa.*"
+
+  - name: "Entertainment"
+    id: "entertainment"
+    description: "Movies, cinema tickets, gaming, events (one-time purchases)"
+    mcc_codes:
+      - "5816"  # Digital Goods - Games
+      - "7832"  # Motion Picture Theaters
+      - "7841"  # Video Rental Stores
+      - "7922"  # Theatrical Producers and Ticket Agencies
+      - "7929"  # Bands, Orchestras, Entertainers
+      - "7991"  # Tourist Attractions and Exhibits
+      - "7996"  # Amusement Parks, Carnivals, Circuses
+      - "7997"  # Membership Clubs (Sports, Recreation)
+      - "7999"  # Recreation Services
+    subcategories:
+      - "Movies & Cinema"
+      - "Gaming"
+      - "Events & Concerts"
+      - "Amusement Parks"
+    keywords:
+      - "bookmyshow"
+      - "pvr"
+      - "inox"
+      - "amc"
+      - "cinema"
+      - "movie ticket"
+      - "steam"
+      - "playstation"
+      - "xbox"
+      - "game purchase"
+      - "concert"
+      - "event ticket"
+      - "wonderla"
+      - "imagica"
+    patterns:
+      - "(?i)bookmyshow.*"
+      - "(?i)pvr.*"
+      - "(?i)inox.*"
+      - "(?i).*cinema.*ticket.*"
+      - "(?i).*movie.*ticket.*"
+      - "(?i).*concert.*"
+      - "(?i).*event.*ticket.*"
+
+  - name: "Health"
+    id: "health"
+    description: "Medical expenses, pharmacy, health insurance"
+    mcc_codes:
+      - "5912"  # Drug Stores and Pharmacies
+      - "5975"  # Hearing Aids
+      - "5976"  # Orthopedic Goods
+      - "8011"  # Doctors and Physicians
+      - "8021"  # Dentists and Orthodontists
+      - "8031"  # Osteopaths
+      - "8041"  # Chiropractors
+      - "8042"  # Optometrists
+      - "8049"  # Podiatrists
+      - "8050"  # Nursing and Personal Care Facilities
+      - "8062"  # Hospitals
+      - "8071"  # Medical and Dental Laboratories
+      - "8099"  # Medical Services
+    subcategories:
+      - "Doctor/Hospital"
+      - "Pharmacy/Medicine"
+      - "Health Insurance"
+      - "Diagnostics/Lab Tests"
+      - "Gym/Fitness"
+    keywords:
+      - "hospital"
+      - "doctor"
+      - "clinic"
+      - "pharmacy"
+      - "medical"
+      - "medicine"
+      - "apollo"
+      - "max hospital"
+      - "fortis"
+      - "medlife"
+      - "1mg"
+      - "pharmeasy"
+      - "netmeds"
+      - "gym"
+      - "fitness"
+      - "cult.fit"
+      - "healthify"
+    patterns:
+      - "(?i).*hospital.*"
+      - "(?i).*medical.*"
+      - "(?i).*pharmacy.*"
+      - "(?i).*clinic.*"
+      - "(?i)1mg.*"
+      - "(?i)pharmeasy.*"
+
+  - name: "Education"
+    id: "education"
+    description: "School fees, courses, books, tuition"
+    mcc_codes:
+      - "5192"  # Books, Periodicals, and Newspapers
+      - "8211"  # Elementary and Secondary Schools
+      - "8220"  # Colleges, Universities
+      - "8241"  # Correspondence Schools
+      - "8244"  # Business and Secretarial Schools
+      - "8249"  # Vocational and Trade Schools
+      - "8299"  # Educational Services
+    subcategories:
+      - "School/College Fees"
+      - "Online Courses"
+      - "Books & Stationery"
+      - "Tuition"
+    keywords:
+      - "school fee"
+      - "college fee"
+      - "tuition"
+      - "udemy"
+      - "coursera"
+      - "byju"
+      - "unacademy"
+      - "vedantu"
+      - "education"
+      - "learning"
+      - "exam fee"
+    patterns:
+      - "(?i).*school.*fee.*"
+      - "(?i).*college.*fee.*"
+      - "(?i).*tuition.*"
+      - "(?i).*course.*"
+
+  - name: "Fees & Charges"
+    id: "fees_charges"
+    description: "Bank charges, transaction fees, penalties, and service fees (NOT utility bills)"
+    subcategories:
+      - "Bank Charges"
+      - "Credit Card Fees"
+      - "Late Fees"
+      - "Service Charges"
+      - "GST"
+      - "Transaction Fees"
+    keywords:
+      - "bank charge"
+      - "service charge"
+      - "transaction fee"
+      - "annual fee"
+      - "late fee"
+      - "penalty"
+      - "gst"
+      - "debit card fee"
+      - "debit card charge"
+      - "processing fee"
+      - "convenience fee"
+      - "handling fee"
+      - "admin charge"
+      - "maintenance charge"
+    patterns:
+      - "(?i)\\bbank\\s+charge"
+      - "(?i)\\bservice\\s+charge"
+      - "(?i)\\btransaction\\s+fee"
+      - "(?i)\\bpenalty\\b"
+      - "(?i)\\bgst\\b"
+      - "(?i)\\bprocessing\\s+fee"
+      - "(?i)\\bconvenience\\s+fee"
+      - "(?i)\\bdebit\\s+card\\s+(fee|charge)"
+      - "(?i)\\bannual\\s+fee"
+      - "(?i)\\blate\\s+fee"
+
+  - name: "Income/Salary"
+    id: "income_salary"
+    description: "Salary credits, income, refunds"
+    subcategories:
+      - "Salary"
+      - "Bonus"
+      - "Refunds"
+      - "Cashback"
+      - "Interest Earned"
+    keywords:
+      - "salary"
+      - "income"
+      - "credit"
+      - "refund"
+      - "cashback"
+      - "bonus"
+      - "incentive"
+      - "commission"
+      - "interest credit"
+      - "return"
+      - "merchandise return"
+    patterns:
+      - "(?i).*salary.*"
+      - "(?i).*refund.*"
+      - "(?i).*cashback.*"
+      - "(?i).*bonus.*"
+      - "(?i).*return.*merchandise.*"
+      - "(?i).*return.*purchase.*"
+      - "(?i).*return.*credit.*"
+
+  - name: "Transfers/UPI"
+    id: "transfers_upi"
+    description: "UPI transfers, IMPS, NEFT, peer-to-peer transfers"
+    subcategories:
+      - "UPI Transfer"
+      - "IMPS"
+      - "NEFT"
+      - "RTGS"
+      - "Peer to Peer"
+    keywords:
+      - "upi"
+      - "imps"
+      - "neft"
+      - "rtgs"
+      - "transfer"
+      - "sent to"
+      - "received from"
+      - "phonepe"
+      - "googlepay"
+      - "paytm"
+      - "bhim"
+      - "venmo"
+    patterns:
+      - "(?i)upi.*"
+      - "(?i)imps.*"
+      - "(?i)neft.*"
+      - "(?i)rtgs.*"
+      - "(?i).*transfer.*"
+
+  - name: "ATM/Cash"
+    id: "atm_cash"
+    description: "ATM withdrawals and cash transactions"
+    mcc_codes:
+      - "6010"  # Manual Cash Disbursements
+      - "6011"  # Automated Cash Disbursements (ATM)
+      - "6050"  # Quasi Cash
+    subcategories:
+      - "ATM Withdrawal"
+      - "Cash Deposit"
+      - "Cash Back"
+    keywords:
+      - "atm"
+      - "cash withdrawal"
+      - "withdrawal"
+      - "pos cash"
+      - "cash back"
+    patterns:
+      - "(?i)atm(?!.*(fee|charge|tax|gst)).*"
+      - "(?i).*withdrawal(?!.*(fee|charge|tax|gst)).*"
+      - "(?i)\\bcash\\b(?!.*(fee|charge|tax|management|gst)).*"
+
+  - name: "Investments"
+    id: "investments"
+    description: "Mutual funds, stocks, SIP, trading"
+    mcc_codes:
+      - "6211"  # Security Brokers/Dealers
+      - "6300"  # Insurance Underwriting, Premiums
+      - "6381"  # Insurance - Premiums
+      - "6399"  # Insurance - Not Elsewhere Classified
+    subcategories:
+      - "Mutual Funds"
+      - "Stocks/Trading"
+      - "SIP"
+      - "Fixed Deposits"
+      - "Insurance Premium"
+    keywords:
+      - "zerodha"
+      - "groww"
+      - "upstox"
+      - "mutual fund"
+      - "sip"
+      - "investment"
+      - "trading"
+      - "stock"
+      - "fd"
+      - "fixed deposit"
+      # Removed insurance keywords to avoid conflict with Insurance category
+    patterns:
+      - "(?i)zerodha.*"
+      - "(?i)groww.*"
+      - "(?i).*mutual.*fund.*"
+      - "(?i).*sip.*"
+
+  - name: "Bills"
+    id: "bills"
+    description: "Utility bills, recurring payments, and bill payments"
+    mcc_codes:
+      - "4814"  # Telecommunication Services
+      - "4816"  # Computer Network/Information Services
+      - "4899"  # Cable and Other Pay TV
+      - "4900"  # Utilities - Electric, Gas, Water, Sanitary
+    subcategories:
+      - "Utility Bills"
+      - "Credit Card Bills"
+      - "Loan EMI"
+      - "Maintenance"
+      - "Phone/Internet"
+      - "Electricity/Water"
+    keywords:
+      - "bill payment"
+      - "utility bill"
+      - "electricity bill"
+      - "water bill"
+      - "phone bill"
+      - "internet bill"
+      - "mobile bill"
+      - "gas bill"
+      - "bsnl bill"
+      - "airtel bill"
+      - "vodafone bill"
+      - "jio bill"
+      - "reliance bill"
+      - "tata bill"
+      - "idea bill"
+      - "emi"
+      - "loan"
+      - "credit card"
+      - "maintenance"
+      - "dues"
+      - "outstanding"
+      - "due payment"
+      - "invoice"
+    patterns:
+      - "(?i).*bill.*payment.*"
+      - "(?i).*utility.*bill.*"
+      - "(?i)(electricity|water|phone|internet|mobile|gas).*bill.*"
+      - "(?i)(bsnl|airtel|vodafone|jio|reliance|tata|idea).*(bill|payment).*"
+      - "(?i).*emi.*"
+      - "(?i).*loan.*"
+      - "(?i).*outstanding.*payment.*"
+      - "(?i).*due.*payment.*"
+
+  - name: "Fraud & Security"
+    id: "fraud_security"
+    description: "Suspicious transactions, fraud alerts, security concerns"
+    subcategories:
+      - "Suspicious International"
+      - "Potential Fraud"
+      - "Security Alert"
+      - "Disputed Transaction"
+    keywords:
+      - "fraud"
+      - "suspicious"
+      - "disputed"
+      - "unauthorized"
+      - "chargeback"
+      - "security alert"
+      - "intl trx"
+      - "international transaction"
+    patterns:
+      - "(?i)\\bintl\\s+trx\\b"
+      - "(?i)international\\s+transaction"
+      - "(?i)fraud"
+      - "(?i)suspicious"
+      - "(?i)disputed"
+
+  - name: "Insurance"
+    id: "insurance"
+    description: "Insurance premiums and policy payments"
+    mcc_codes:
+      - "6300"  # Insurance Sales, Underwriting, Premiums
+      - "6399"  # Insurance Default
+    subcategories:
+      - "Life Insurance"
+      - "Health Insurance"
+      - "Vehicle Insurance"
+      - "Home Insurance"
+      - "Term Insurance"
+    keywords:
+      - "insurance"
+      - "premium"
+      - "policy"
+      - "lic"
+      - "hdfc life"
+      - "icici prudential"
+      - "sbi life"
+      - "max life"
+      - "bajaj allianz"
+      - "star health"
+      - "care health"
+      - "niva bupa"
+      - "religare"
+      - "term insurance"
+      - "health cover"
+      - "motor insurance"
+      - "car insurance"
+      - "bike insurance"
+    patterns:
+      - "(?i).*insurance.*premium.*"
+      - "(?i).*policy.*payment.*"
+      - "(?i)\\blic\\b.*"
+      - "(?i)(hdfc|icici|sbi|max).*life.*"
+      - "(?i).*health.*insurance.*"
+
+  - name: "Charity & Donations"
+    id: "charity_donations"
+    description: "Charitable donations and NGO contributions"
+    mcc_codes:
+      - "8398"  # Charitable and Social Service Organizations
+      - "8641"  # Civic, Social, and Fraternal Associations
+      - "8661"  # Religious Organizations
+    subcategories:
+      - "NGO Donations"
+      - "Religious Donations"
+      - "Crowdfunding"
+      - "Temple/Church"
+      - "Charity"
+    keywords:
+      - "donation"
+      - "charity"
+      - "ngo"
+      - "crowdfunding"
+      - "milaap"
+      - "ketto"
+      - "gofundme"
+      - "temple"
+      - "church"
+      - "mosque"
+      - "gurudwara"
+      - "religious"
+      - "donate"
+      - "contribution"
+      - "cause"
+      - "relief fund"
+      - "pm cares"
+      - "red cross"
+      - "akshaya patra"
+      - "cry india"
+    patterns:
+      - "(?i).*donat(ion|e).*"
+      - "(?i).*charity.*"
+      - "(?i).*ngo.*"
+      - "(?i)(milaap|ketto|gofundme).*"
+      - "(?i).*(temple|church|mosque|gurudwara).*"
+
+  - name: "Personal Care"
+    id: "personal_care"
+    description: "Salon, spa, gym, beauty, and wellness services"
+    mcc_codes:
+      - "5977"  # Cosmetic Stores
+      - "7230"  # Beauty and Barber Shops
+      - "7298"  # Health and Beauty Spas
+      - "7991"  # Tourist Attractions and Exhibits
+      - "7997"  # Membership Clubs (Sports, Recreation, Athletic)
+    subcategories:
+      - "Salon & Spa"
+      - "Gym & Fitness"
+      - "Beauty Products"
+      - "Wellness"
+      - "Massage"
+    keywords:
+      - "salon"
+      - "spa"
+      - "gym"
+      - "fitness"
+      - "cultfit"
+      - "cult.fit"
+      - "goldsgym"
+      - "wellness"
+      - "massage"
+      - "haircut"
+      - "facial"
+      - "beauty"
+      - "lakme"
+      - "vlcc"
+      - "naturals"
+      - "urban company"
+      - "urbanclap"
+      - "grooming"
+      - "yoga"
+      - "zumba"
+    patterns:
+      - "(?i).*(salon|spa|gym|fitness).*"
+      - "(?i)cult\\.?fit.*"
+      - "(?i)urban.*company.*"
+      - "(?i).*(massage|facial|haircut).*"
+
+  - name: "Pets"
+    id: "pets"
+    description: "Pet food, veterinary services, and pet supplies"
+    mcc_codes:
+      - "0742"  # Veterinary Services
+      - "5995"  # Pet Shops, Pet Food and Supplies
+    subcategories:
+      - "Pet Food"
+      - "Veterinary"
+      - "Pet Supplies"
+      - "Pet Grooming"
+      - "Pet Services"
+    keywords:
+      - "pet food"
+      - "veterinary"
+      - "vet"
+      - "dog food"
+      - "cat food"
+      - "pedigree"
+      - "whiskas"
+      - "drools"
+      - "pet supplies"
+      - "pet shop"
+      - "pet grooming"
+      - "pet care"
+      - "puppy"
+      - "kitten"
+    patterns:
+      - "(?i).*pet.*"
+      - "(?i).*vet(erinary)?.*"
+      - "(?i).*(dog|cat|puppy|kitten).*food.*"
+
+  - name: "Home Improvement"
+    id: "home_improvement"
+    description: "Furniture, home repairs, interior decoration, and appliances"
+    mcc_codes:
+      - "1520"  # General Contractors
+      - "1711"  # Heating, Plumbing, Air Conditioning
+      - "1731"  # Electrical Contractors
+      - "5021"  # Office and Commercial Furniture
+      - "5712"  # Furniture, Home Furnishings, and Equipment Stores
+      - "5713"  # Floor Covering Stores
+      - "5714"  # Drapery, Window Covering and Upholstery Stores
+      - "5718"  # Fireplaces, Fireplace Screens and Accessories Stores
+    subcategories:
+      - "Furniture"
+      - "Home Repairs"
+      - "Interior Decoration"
+      - "Appliances"
+      - "Electrician"
+      - "Plumber"
+    keywords:
+      - "furniture"
+      - "ikea"
+      - "pepperfry"
+      - "urban ladder"
+      - "appliance"
+      - "home repair"
+      - "plumber"
+      - "electrician"
+      - "carpenter"
+      - "interior"
+      - "decoration"
+      - "livspace"
+      - "sofa"
+      - "bed"
+      - "chair"
+      - "table"
+      - "cupboard"
+      - "wardrobe"
+    patterns:
+      - "(?i).*(furniture|ikea|pepperfry).*"
+      - "(?i).*(plumber|electrician|carpenter).*"
+      - "(?i).*interior.*"
+      - "(?i).*(sofa|bed|chair|table|wardrobe).*"
+
+  - name: "Automotive"
+    id: "automotive"
+    description: "Vehicle maintenance, repairs, car wash, and accessories"
+    mcc_codes:
+      - "5531"  # Auto and Home Supply Stores
+      - "5532"  # Automotive Tire Stores
+      - "5533"  # Automotive Parts and Accessories Stores
+      - "5571"  # Motorcycle Shops and Dealers
+      - "7534"  # Tire Retreading and Repair Shops
+      - "7535"  # Auto Paint Shops
+      - "7538"  # Auto Service Shops
+      - "7542"  # Car Washes
+      - "7549"  # Towing Services
+    subcategories:
+      - "Vehicle Maintenance"
+      - "Car Wash"
+      - "Auto Repairs"
+      - "Accessories"
+      - "Spare Parts"
+    keywords:
+      - "car wash"
+      - "vehicle service"
+      - "car service"
+      - "bike service"
+      - "auto repair"
+      - "repair service"
+      - "spare parts"
+      - "auto parts"
+      - "tyre"
+      - "tire"
+      - "car care"
+      - "vehicle maintenance"
+      - "oil change"
+      - "alignment"
+      - "car accessories"
+      - "bike accessories"
+    patterns:
+      - "(?i).*car.*wash.*"
+      - "(?i).*(vehicle|car|bike).*(service|repair|maintenance).*"
+      - "(?i).*(tyre|tire|spare.*part).*"
+      - "(?i).*auto.*part.*"
+
+  - name: "Taxes & Government"
+    id: "taxes_government"
+    description: "Tax payments, government fees, and licenses"
+    mcc_codes:
+      - "9211"  # Court Costs
+      - "9222"  # Fines
+      - "9311"  # Tax Payments
+      - "9399"  # Government Services
+    subcategories:
+      - "Income Tax"
+      - "Property Tax"
+      - "Government Fees"
+      - "License/Permits"
+      - "Fines"
+    keywords:
+      - "income tax"
+      - "tax payment"
+      - "property tax"
+      - "gst"
+      - "tds"
+      - "advance tax"
+      - "self assessment tax"
+      - "government fee"
+      - "license fee"
+      - "permit"
+      - "challan"
+      - "fine"
+      - "penalty"
+      - "passport fee"
+      - "visa fee"
+      - "registration"
+    patterns:
+      - "(?i).*(income|property).*tax.*"
+      - "(?i).*gst.*payment.*"
+      - "(?i).*(challan|fine|penalty).*"
+      - "(?i).*government.*fee.*"
+
+  - name: "Electronics & Technology"
+    id: "electronics_technology"
+    description: "Mobile phones, laptops, gadgets, and tech accessories"
+    mcc_codes:
+      - "5732"  # Electronics Stores
+      - "5045"  # Computers, Computer Peripheral Equipment, Software
+      - "5065"  # Electrical Parts and Equipment
+    subcategories:
+      - "Mobile Phones"
+      - "Laptops/Computers"
+      - "Gadgets"
+      - "Tech Accessories"
+      - "Software"
+    keywords:
+      - "mobile"
+      - "smartphone"
+      - "iphone"
+      - "samsung"
+      - "oneplus"
+      - "laptop"
+      - "computer"
+      - "macbook"
+      - "dell"
+      - "hp laptop"
+      - "lenovo"
+      - "electronics"
+      - "gadget"
+      - "headphones"
+      - "earphones"
+      - "charger"
+      - "power bank"
+      - "croma"
+      - "reliance digital"
+      - "vijay sales"
+      - "best buy"
+      - "apple store"
+      - "amazon electronics"
+    patterns:
+      - "(?i).*(mobile|smartphone|iphone).*"
+      - "(?i).*(laptop|computer|macbook).*"
+      - "(?i).*(electronics|gadget).*"
+      - "(?i)(croma|reliance.*digital|best.*buy).*"
+      - "(?i)amazon.*(?=.*(laptop|phone|electronics|computer|tablet|ipad|watch|kindle|echo|fire|alexa))"
+
+  - name: "Professional Services"
+    id: "professional_services"
+    description: "Legal, accounting, consulting, and professional fees"
+    mcc_codes:
+      - "8111"  # Legal Services, Attorneys
+      - "8931"  # Accounting, Auditing, and Bookkeeping Services
+      - "7392"  # Management, Consulting, and Public Relations Services
+    subcategories:
+      - "Legal Services"
+      - "Accounting"
+      - "Consulting"
+      - "Professional Membership"
+      - "Notary"
+    keywords:
+      - "legal"
+      - "lawyer"
+      - "attorney"
+      - "advocate"
+      - "accounting"
+      - "auditing"
+      - "ca fees"
+      - "chartered accountant"
+      - "consulting"
+      - "professional fee"
+      - "notary"
+      - "documentation"
+      - "legal advice"
+    patterns:
+      - "(?i).*(legal|lawyer|attorney|advocate).*"
+      - "(?i).*(accounting|auditing|ca.*fee).*"
+      - "(?i).*consulting.*"
+
+  - name: "Kids & Family"
+    id: "kids_family"
+    description: "Childcare, kids education, toys, and family activities"
+    mcc_codes:
+      - "5641"  # Children's and Infants' Wear Stores
+      - "5945"  # Hobby, Toy, and Game Shops
+      - "8351"  # Child Care Services
+    subcategories:
+      - "Childcare"
+      - "Kids Education"
+      - "Toys"
+      - "Kids Activities"
+      - "Baby Products"
+    keywords:
+      - "daycare"
+      - "childcare"
+      - "kids"
+      - "toys"
+      - "baby"
+      - "diaper"
+      - "pampers"
+      - "huggies"
+      - "kids education"
+      - "kids activity"
+      - "playschool"
+      - "nursery"
+      - "hamleys"
+      - "firstcry"
+      - "hopscotch"
+    patterns:
+      - "(?i).*(daycare|childcare).*"
+      - "(?i).*(kids|baby|children).*"
+      - "(?i).*(toy|diaper).*"
+      - "(?i)(hamleys|firstcry|hopscotch).*"
+
+  - name: "Subscriptions & Memberships"
+    id: "subscriptions_memberships"
+    description: "Recurring subscriptions, memberships, and online services"
+    mcc_codes:
+      - "5816"  # Digital Goods: Games
+      - "5817"  # Digital Goods: Applications (excludes games)
+      - "5818"  # Digital Goods: Large Digital Goods Merchant
+    subcategories:
+      - "Streaming Services"
+      - "Cloud Storage"
+      - "Software Subscriptions"
+      - "News/Magazines"
+      - "Online Services"
+    keywords:
+      - "netflix"
+      - "amazon prime"
+      - "disney+ hotstar"
+      - "spotify"
+      - "youtube premium"
+      - "apple music"
+      - "google one"
+      - "icloud"
+      - "dropbox"
+      - "microsoft 365"
+      - "office 365"
+      - "adobe creative cloud"
+      - "canva pro"
+      - "grammarly"
+      - "linkedin premium"
+      - "medium membership"
+      - "times of india"
+    patterns:
+      - "(?i)(netflix|prime|hotstar|spotify).*"
+      - "(?i).*(youtube|apple.*music).*premium.*"
+      - "(?i)(google.*one|icloud|dropbox).*"
+      - "(?i)(microsoft|office).*365.*"
+
+  - name: "Gifts & Special Occasions"
+    id: "gifts_occasions"
+    description: "Gifts, flowers, celebrations, and special occasions"
+    mcc_codes:
+      - "5947"  # Gift, Card, Novelty, and Souvenir Shops
+      - "5992"  # Florists
+      - "5993"  # Cigar Stores and Stands
+    subcategories:
+      - "Gifts"
+      - "Flowers"
+      - "Celebrations"
+      - "Gift Cards"
+      - "Party Supplies"
+    keywords:
+      - "gift"
+      - "flowers"
+      - "ferns and petals"
+      - "fnp"
+      - "floweraura"
+      - "celebration"
+      - "birthday"
+      - "anniversary"
+      - "gift card"
+      - "voucher"
+      - "party"
+      - "decoration"
+      - "cake"
+      - "bouquet"
+    patterns:
+      - "(?i).*(gift|present).*"
+      - "(?i).*(flower|bouquet).*"
+      - "(?i)(ferns.*petals|fnp|floweraura).*"
+      - "(?i).*(celebration|birthday|anniversary).*"
+
+  - name: "Other"
+    id: "other"
+    description: "Miscellaneous transactions not fitting other categories"
+    subcategories:
+      - "Miscellaneous"
+      - "Uncategorized"
+    keywords:
+      - "other"
+      - "misc"
+      - "miscellaneous"
+    patterns:
+      - "(?i).*"
+
+# Confidence thresholds
+confidence_thresholds:
+  auto_accept: 0.85
+  llm_rerank: 0.60
+  human_review: 0.60
+
+# Channel types
+channels:
+  - "UPI"
+  - "IMPS"
+  - "NEFT"
+  - "RTGS"
+  - "POS"
+  - "CARD"
+  - "ATM"
+  - "NET_BANKING"
+  - "WALLET"
+  - "CASH"
+  - "CHEQUE"
+  - "OTHER"

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+
+# Tooling cache
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# Build metadata
+*.egg-info/
+build/
+dist/
+
+# Local runtime files
+sentinelfi.db
+.env
+.env.runtime
+.frontend_dev/
+sample_project/
+data/uploads/
+data/feedback/corrections.jsonl
+output/tmp_*.db
+
+# Outputs
+output/pdf/*.pdf
+output/reports/*.md
+output/reports/*.csv
+output/cleanup/

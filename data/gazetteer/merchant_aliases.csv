@@ -1,0 +1,367 @@
+merchant_id,canonical_name,aliases,category,subcategory
+1,ZOMATO,"zomato,zmt,zomt,zomato pay,zomatopay,zomato*,zmt*",food_dining,Food Delivery
+2,SWIGGY,"swiggy,swgy,swigy,swiggy*,swgy*",food_dining,Food Delivery
+3,UBER_EATS,"uber eats,ubereats,uber*eats",food_dining,Food Delivery
+4,DOMINOS,"dominos,domino,dominos pizza,domino's",food_dining,Fast Food
+5,MCDONALDS,"mcdonalds,mcd,mcdonald,mc donald,mc donalds",food_dining,Fast Food
+6,KFC,"kfc,kentucky,kentucky fried chicken",food_dining,Fast Food
+7,STARBUCKS,"starbucks,starbuck,sbux",food_dining,Cafes & Coffee
+8,BIGBASKET,"bigbasket,big basket,bb,bigbasket*",groceries,Online Grocery
+9,BLINKIT,"blinkit,grofers,blink it,blinkit*",groceries,Online Grocery
+10,ZEPTO,"zepto,zpto,zepto*",groceries,Online Grocery
+11,DUNZO,"dunzo,dnzo,dunzo*",groceries,Online Grocery
+12,DMART,"dmart,d mart,d-mart,avenue supermarts",groceries,Supermarkets
+13,RELIANCE_FRESH,"reliance fresh,reliancemart,reliancefresh",groceries,Supermarkets
+14,MORE,"more,more supermarket,more megastore",groceries,Supermarkets
+15,JIOMART,"jiomart,jio mart,jio*mart",groceries,Online Grocery
+16,UBER,"uber,uber*,uber india",transport,Cab Services
+17,OLA,"ola,ola cabs,ola*,ola cab",transport,Cab Services
+18,RAPIDO,"rapido,rpdo,rapido*",transport,Cab Services
+19,METRO,"metro,metro rail,metro card,metro recharge",transport,Public Transport
+20,MAKEMYTRIP,"makemytrip,mmt,make my trip,makemytrip*",travel,Travel Packages
+21,GOIBIBO,"goibibo,goibibo*,go ibibo",travel,Travel Packages
+22,IRCTC,"irctc,indian railway,railway,irctc*",travel,Trains
+23,REDBUS,"redbus,red bus,redbus*",travel,Bus Travel
+24,OYO,"oyo,oyo rooms,oyorooms,oyo*",travel,Hotels
+25,AIRBNB,"airbnb,air bnb,airbnb*",travel,Hotels
+26,BOOKING_COM,"booking.com,booking,booking com,bookingcom",travel,Hotels
+27,HPCL,"hpcl,hp,hindustan petroleum,hp petrol",fuel,Petrol
+28,IOCL,"iocl,indian oil,indianoil,indian oil corporation",fuel,Petrol
+29,BPCL,"bpcl,bharat petroleum,bharatpetroleum,bp",fuel,Petrol
+30,SHELL,"shell,shell petrol,shell india",fuel,Petrol
+31,RELIANCE_PETROL,"reliance petrol,reliance petroleum",fuel,Petrol
+32,BESCOM,"bescom,bangalore electricity,bescom*",utilities,Electricity
+33,MSEB,"mseb,maharashtra electricity,mseb*",utilities,Electricity
+34,ADANI_GAS,"adani gas,adani,adanigas",utilities,Gas/LPG
+35,INDANE,"indane,indane gas,indane lpg",utilities,Gas/LPG
+36,AIRTEL,"airtel,airtel*,bharti airtel",utilities,Mobile/Phone
+37,JIO,"jio,reliance jio,jio*,reliancejio",utilities,Mobile/Phone
+38,VODAFONE,"vodafone,vodafone idea,vi,vodafone*",utilities,Mobile/Phone
+39,BSNL,"bsnl,bharat sanchar,bharat sanchar nigam",utilities,Mobile/Phone
+40,TATA_SKY,"tata sky,tatasky,tata play,tataplay",utilities,DTH/Cable
+41,DISH_TV,"dish tv,dishtv,dish*",utilities,DTH/Cable
+42,AMAZON,"amazon,amazon.in,amazon india,amazon*,amzn",shopping,Online Shopping
+43,CLOUDTAIL,"cloudtail,cloudtail india,cloud tail,cloudtail*",shopping,Online Shopping
+44,FLIPKART,"flipkart,flipkart*,fk,flipkart.com",shopping,Online Shopping
+45,MYNTRA,"myntra,myntra*,myntra.com",shopping,Clothing & Fashion
+46,AJIO,"ajio,ajio*,ajio.com",shopping,Clothing & Fashion
+47,NYKAA,"nykaa,nykaa*,nykaa.com",shopping,Online Shopping
+48,MEESHO,"meesho,meesho*,meesho.com",shopping,Online Shopping
+49,SNAPDEAL,"snapdeal,snapdeal*,snapdeal.com",shopping,Online Shopping
+50,SHOPPERS_STOP,"shoppers stop,shoppersstop,shoppers",shopping,Clothing & Fashion
+51,LIFESTYLE,"lifestyle,lifestyle stores,lifestyle*",shopping,Clothing & Fashion
+52,WESTSIDE,"westside,west side,westside*",shopping,Clothing & Fashion
+53,PANTALOONS,"pantaloons,pantaloon,pantaloons*",shopping,Clothing & Fashion
+55,PRIME_VIDEO,"prime video,amazon prime,primevideo,prime*",bills,Subscription
+56,HOTSTAR,"hotstar,disney hotstar,disney+hotstar,hotstar*",bills,Subscription
+59,BOOKMYSHOW,"bookmyshow,book my show,bms,bookmyshow*",entertainment,Movies & Cinema
+60,PVR,"pvr,pvr cinemas,pvr*",entertainment,Movies & Cinema
+61,INOX,"inox,inox movies,inox*",entertainment,Movies & Cinema
+62,APOLLO_PHARMACY,"apollo pharmacy,apollo,apollopharmacy,apollo*",health,Pharmacy/Medicine
+63,MEDLIFE,"medlife,medlife*,med life",health,Pharmacy/Medicine
+64,1MG,"1mg,one mg,onemg,1mg*",health,Pharmacy/Medicine
+65,PHARMEASY,"pharmeasy,pharm easy,pharmeasy*",health,Pharmacy/Medicine
+66,NETMEDS,"netmeds,net meds,netmeds*",health,Pharmacy/Medicine
+67,APOLLO_HOSPITAL,"apollo hospital,apollo hospitals,apollo hosp",health,Doctor/Hospital
+68,MAX_HOSPITAL,"max hospital,max healthcare,max hosp",health,Doctor/Hospital
+69,FORTIS,"fortis,fortis hospital,fortis healthcare",health,Doctor/Hospital
+70,CULTFIT,"cultfit,cult.fit,cult fit,cure.fit,curefit",health,Gym/Fitness
+71,UDEMY,"udemy,udemy*,udemy.com",education,Online Courses
+72,COURSERA,"coursera,coursera*,coursera.org",education,Online Courses
+73,BYJUS,"byjus,byju's,byju,byjus*",education,Online Courses
+74,UNACADEMY,"unacademy,unacademy*,unacadmy",education,Online Courses
+75,VEDANTU,"vedantu,vedantu*,vedantu.com",education,Online Courses
+76,PHONEPE,"phonepe,phone pe,phonepe*,phone*pe",transfers_upi,UPI Transfer
+77,GOOGLEPAY,"googlepay,google pay,gpay,google*pay,g pay",transfers_upi,UPI Transfer
+78,PAYTM,"paytm,paytm*,pay tm",transfers_upi,UPI Transfer
+79,BHIM,"bhim,bhim upi,bhim*",transfers_upi,UPI Transfer
+80,ZERODHA,"zerodha,zerodha*,kite",investments,Stocks/Trading
+81,GROWW,"groww,groww*,grow",investments,Mutual Funds
+82,UPSTOX,"upstox,upstox*,upstx",investments,Stocks/Trading
+83,LIC,"lic,life insurance corporation,lic*",investments,Insurance Premium
+84,HDFC_LIFE,"hdfc life,hdfc standard life,hdfclife",investments,Insurance Premium
+85,ICICI_PRUDENTIAL,"icici prudential,iciciprudential,icici pru",investments,Insurance Premium
+86,SBI,"sbi,state bank,state bank of india,sbi*",transfers_upi,UPI Transfer
+87,HDFC_BANK,"hdfc,hdfc bank,hdfc*",transfers_upi,UPI Transfer
+88,ICICI_BANK,"icici,icici bank,icici*",transfers_upi,UPI Transfer
+350,ICICI_DIRECT,"icici direct,icicidirect,icici*direct,icici wealth",investments,Stocks/Trading
+89,AXIS_BANK,"axis,axis bank,axis*",transfers_upi,UPI Transfer
+90,KOTAK_BANK,"kotak,kotak mahindra,kotak bank,kotak*",transfers_upi,UPI Transfer
+91,YES_BANK,"yes bank,yes,yesbank,yes*",transfers_upi,UPI Transfer
+92,APPLE,"apple,apple.com,apple.com/bill,apple inc",bills,Subscription
+93,GOOGLE,"google,google.com,google.com/bill,google play,google*",subscriptions_memberships,Cloud Storage
+94,MICROSOFT,"microsoft,microsoft.com,msft,office 365,microsoft 365",bills,Subscription
+95,ADOBE,"adobe,adobe.com,adobe creative cloud,adobe*",bills,Subscription
+96,DROPBOX,"dropbox,dropbox*,dropbox.com",bills,Subscription
+97,GITHUB,"github,github.com,github*",bills,Subscription
+98,ZOOM,"zoom,zoom.us,zoom meetings,zoom*",bills,Subscription
+99,LINKEDIN,"linkedin,linkedin premium,linkedin*",bills,Subscription
+100,SUBWAY,"subway,subway sandwich,subway*",food_dining,Fast Food
+101,BURGER_KING,"burger king,bk,burgerking,burger*king",food_dining,Fast Food
+102,PIZZA_HUT,"pizza hut,pizzahut,pizza*hut",food_dining,Fast Food
+103,DUNKIN,"dunkin,dunkin donuts,dunkin'",food_dining,Cafes & Coffee
+104,CHAAYOS,"chaayos,chai point,chaayos*",food_dining,Cafes & Coffee
+105,CCD,"ccd,cafe coffee day,cafe*coffee*day",food_dining,Cafes & Coffee
+106,HALDIRAMS,"haldirams,haldiram,haldirams*",food_dining,Restaurants
+107,BARBEQUE_NATION,"barbeque nation,bbq nation,barbeque*",food_dining,Restaurants
+108,BASKIN_ROBBINS,"baskin robbins,baskin,baskin*robbins",food_dining,Fast Food
+109,TATA_CLIQ,"tata cliq,tatacliq,cliq,tata*cliq",shopping,Online Shopping
+110,CROMA,"croma,croma electronics,croma*",shopping,Electronics
+111,RELIANCE_DIGITAL,"reliance digital,reliancedigital,reliance*digital",shopping,Electronics
+112,VIJAY_SALES,"vijay sales,vijaysales,vijay*sales",shopping,Electronics
+113,DECATHLON,"decathlon,decathlon india,decathlon*",shopping,Online Shopping
+114,LENSKART,"lenskart,lenskart*,lenskart.com",shopping,Online Shopping
+115,PEPPERFRY,"pepperfry,pepperfry*,pepperfry.com",shopping,Home & Kitchen
+116,URBAN_LADDER,"urban ladder,urbanladder,urban*ladder",shopping,Home & Kitchen
+117,H&M,"h&m,hm,h and m,h&m*",shopping,Clothing & Fashion
+118,ZARA,"zara,zara india,zara*",shopping,Clothing & Fashion
+119,UNIQLO,"uniqlo,uniqlo*",shopping,Clothing & Fashion
+120,NIKE,"nike,nike india,nike*",shopping,Clothing & Fashion
+121,ADIDAS,"adidas,adidas india,adidas*",shopping,Clothing & Fashion
+122,PUMA,"puma,puma india,puma*",shopping,Clothing & Fashion
+123,REEBOK,"reebok,reebok india,reebok*",shopping,Clothing & Fashion
+124,PAYPAL,"paypal,paypal*,paypal.com",transfers_upi,UPI Transfer
+125,STRIPE,"stripe,stripe.com,stripe*",transfers_upi,UPI Transfer
+126,RAZORPAY,"razorpay,razor pay,razorpay*",transfers_upi,UPI Transfer
+127,PHONEPE_WALLET,"phonepe wallet,phonepe*wallet",transfers_upi,UPI Transfer
+128,PAYTM_WALLET,"paytm wallet,paytm*wallet",transfers_upi,UPI Transfer
+129,GAANA,"gaana,gaana.com,gaana*",bills,Subscription
+130,WYNK,"wynk,wynk music,wynk*",bills,Subscription
+131,JIO_SAAVN,"jiosaavn,jio saavn,saavn,jiosaavn*",bills,Subscription
+132,APPLE_MUSIC,"apple music,applemusic,apple*music",bills,Subscription
+133,APPLE_TV,"apple tv,apple tv+,appletv,apple*tv",bills,Subscription
+134,ICLOUD,"icloud,icloud storage,icloud*",bills,Subscription
+135,GOOGLE_ONE,"google one,googleone,google*one",bills,Subscription
+136,ONEDRIVE,"onedrive,one drive,microsoft onedrive",bills,Subscription
+137,CANVA,"canva,canva.com,canva pro",bills,Subscription
+138,NOTION,"notion,notion.so,notion*",bills,Subscription
+139,EVERNOTE,"evernote,evernote*",bills,Subscription
+140,GRAMMARLY,"grammarly,grammarly*",bills,Subscription
+141,AUDIBLE,"audible,audible.com,audible*",bills,Subscription
+142,KINDLE,"kindle,kindle unlimited,kindle*",bills,Subscription
+143,TWITCH,"twitch,twitch.tv,twitch*",bills,Subscription
+144,DISCORD,"discord,discord nitro,discord*",bills,Subscription
+145,UBER_EATS_INT,"uber eats,ubereats intl,uber*eats",food_dining,Food Delivery
+146,DELIVEROO,"deliveroo,deliveroo*",food_dining,Food Delivery
+147,FOODPANDA,"foodpanda,food panda,foodpanda*",food_dining,Food Delivery
+148,INDIGO_AIRLINES,"indigo,indigo airlines,6e,indigo*",travel,Flights
+149,SPICEJET,"spicejet,spice jet,spicejet*",travel,Flights
+150,AIR_INDIA,"air india,airindia,air*india",travel,Flights
+151,VISTARA,"vistara,vistara airlines,vistara*",travel,Flights
+152,GO_FIRST,"go first,go air,goair,gofirst",travel,Flights
+153,CLEARTRIP,"cleartrip,clear trip,cleartrip*",travel,Travel Packages
+154,YATRA,"yatra,yatra.com,yatra*",travel,Travel Packages
+155,IXIGO,"ixigo,ixigo*",travel,Travel Packages
+156,TREEBO,"treebo,treebo hotels,treebo*",travel,Hotels
+157,FABHOTELS,"fabhotels,fab hotels,fabhotels*",travel,Hotels
+158,AGODA,"agoda,agoda.com,agoda*",travel,Hotels
+159,EXPEDIA,"expedia,expedia.com,expedia*",travel,Hotels
+160,TRIVAGO,"trivago,trivago.com,trivago*",travel,Hotels
+161,HOME_DEPOT,"home depot,homedepot,home*depot",home_improvement,Hardware Store
+162,LOWES,"lowes,lowe's,lowes*",home_improvement,Hardware Store
+163,ACE_HARDWARE,"ace hardware,ace,acehardware,ace*",home_improvement,Hardware Store
+164,MENARDS,"menards,menards*",home_improvement,Hardware Store
+165,TRUE_VALUE,"true value,truevalue,true*value",home_improvement,Hardware Store
+166,BENJAMIN_MOORE,"benjamin moore,benjaminmoore,benjamin*moore",home_improvement,Paint Store
+167,SHERWIN_WILLIAMS,"sherwin williams,sherwin,sherwinwilliams,sherwin*",home_improvement,Paint Store
+168,FLOOR_DECOR,"floor & decor,floor and decor,floordecor,floor*decor",home_improvement,Flooring
+169,LUMBER_LIQUIDATORS,"lumber liquidators,lumberliquidators,lumber*",home_improvement,Flooring
+170,TILE_SHOP,"the tile shop,tile shop,tileshop,tile*shop",home_improvement,Flooring
+171,TRACTOR_SUPPLY,"tractor supply,tractorsupply,tractor*supply,tsc",home_improvement,Hardware Store
+172,HARBOR_FREIGHT,"harbor freight,harborfreight,harbor*freight",home_improvement,Tools
+173,WAYFAIR,"wayfair,wayfair.com,wayfair*",home_improvement,Home Furnishing
+174,PETSMART,"petsmart,pet smart,petsmart*,pet*smart",pets,Pet Store
+175,PETCO,"petco,petco*",pets,Pet Store
+176,CHEWY,"chewy,chewy.com,chewy*",pets,Pet Store Online
+177,PET_SUPPLIES_PLUS,"pet supplies plus,petsuppliesplus,pet*supplies*",pets,Pet Store
+178,VCA_HOSPITAL,"vca,vca animal hospital,vca*,vca vet",pets,Veterinary
+179,BANFIELD,"banfield,banfield pet hospital,banfield*",pets,Veterinary
+180,BLUEPEARL,"bluepearl,blue pearl,bluepearl*",pets,Veterinary
+181,WAG,"wag,wag!,wag.com,wag*",pets,Pet Services
+182,ROVER,"rover,rover.com,rover*",pets,Pet Services
+183,DOGTOPIA,"dogtopia,dogtopia*",pets,Pet Services
+184,CAMP_BOW_WOW,"camp bow wow,campbowwow,camp*bow*",pets,Pet Services
+185,PETVET365,"petvet365,petvet,pet*vet*",pets,Veterinary
+186,FIRSTCRY,"firstcry,first cry,firstcry*",kids_family,Kids Store
+187,HOPSCOTCH,"hopscotch,hopscotch*",kids_family,Kids Store
+188,MOTHERCARE,"mothercare,mother care,mothercare*",kids_family,Kids Store
+189,BABYOYE,"babyoye,baby oye,babyoye*",kids_family,Kids Store
+190,HAMLEYS,"hamleys,hamley's,hamleys*",kids_family,Toy Store
+191,TOYS_R_US,"toys r us,toysrus,toys*r*us",kids_family,Toy Store
+192,CHILDRENS_PLACE,"the childrens place,childrens place,children*place",kids_family,Kids Clothing
+193,CARTERS,"carters,carter's,carters*",kids_family,Kids Clothing
+194,OSHKOSH,"oshkosh,osh kosh,oshkosh*",kids_family,Kids Clothing
+195,GYMBOREE,"gymboree,gymboree*",kids_family,Kids Clothing
+196,GAP_KIDS,"gap kids,gapkids,gap*kids",kids_family,Kids Clothing
+197,BUY_BUY_BABY,"buy buy baby,buybuybaby,buy*buy*baby",kids_family,Baby Store
+198,POTTERY_BARN_KIDS,"pottery barn kids,potterybarnkids,pottery*barn*kids",kids_family,Kids Furniture
+199,LITTLE_TIKES,"little tikes,littletikes,little*tikes",kids_family,Toys
+200,FISHER_PRICE,"fisher price,fisherprice,fisher*price",kids_family,Toys
+201,MELISSA_DOUG,"melissa & doug,melissa and doug,melissadoug,melissa*doug",kids_family,Toys
+202,BRIGHT_HORIZONS,"bright horizons,brighthorizons,bright*horizons",kids_family,Daycare
+203,KINDERCARE,"kindercare,kinder care,kindercare*",kids_family,Daycare
+204,GODDARD_SCHOOL,"goddard school,goddard,goddard*",kids_family,Preschool
+205,PRIMROSE_SCHOOLS,"primrose schools,primrose,primrose*",kids_family,Preschool
+206,BEST_BUY,"best buy,bestbuy,best*buy,bby",electronics_technology,Electronics Store
+207,APPLE_STORE,"apple store,applestore,apple*store",electronics_technology,Electronics Store
+208,MICROSOFT_STORE,"microsoft store,microsoftstore,microsoft*store",electronics_technology,Electronics Store
+209,BH_PHOTO,"b&h photo,b&h,b and h photo,bhphoto,bh*photo",electronics_technology,Electronics Store
+210,MICRO_CENTER,"micro center,microcenter,micro*center",electronics_technology,Electronics Store
+211,NEWEGG,"newegg,newegg.com,newegg*",electronics_technology,Electronics Online
+212,CRUTCHFIELD,"crutchfield,crutchfield.com,crutchfield*",electronics_technology,Electronics Online
+213,FRYS_ELECTRONICS,"frys electronics,frys,fry's,frys*",electronics_technology,Electronics Store
+214,GAMESTOP,"gamestop,game stop,gamestop*",electronics_technology,Gaming
+215,DELL_STORE,"dell,dell.com,dell store,dell*",electronics_technology,Computer Store
+216,HP_STORE,"hp store,hp,hewlett packard,hp*",electronics_technology,Computer Store
+217,LENOVO_STORE,"lenovo,lenovo.com,lenovo store,lenovo*",electronics_technology,Computer Store
+218,ASUS_STORE,"asus,asus.com,asus store,asus*",electronics_technology,Computer Store
+219,SONY_STORE,"sony store,sony,sony.com,sony*",electronics_technology,Electronics Store
+220,SAMSUNG_STORE,"samsung store,samsung,samsung.com,samsung*",electronics_technology,Electronics Store
+221,SANGEETHA_MOBILES,"sangeetha mobiles,sangeetha,sangeetha*",electronics_technology,Mobile Store
+222,POORVIKA,"poorvika,poorvika mobiles,poorvika*",electronics_technology,Mobile Store
+223,HULU,"hulu,hulu.com,hulu*",subscriptions_memberships,Streaming
+224,HBO_MAX,"hbo max,hbomax,hbo*max",subscriptions_memberships,Streaming
+225,APPLE_TV_PLUS,"apple tv+,apple tv plus,appletv+,apple*tv*plus",subscriptions_memberships,Streaming
+226,PARAMOUNT_PLUS,"paramount+,paramount plus,paramount*plus",subscriptions_memberships,Streaming
+227,PEACOCK,"peacock,peacock tv,peacock*",subscriptions_memberships,Streaming
+228,DISCOVERY_PLUS,"discovery+,discovery plus,discovery*plus",subscriptions_memberships,Streaming
+229,YOUTUBE_TV,"youtube tv,youtubetv,youtube*tv,yttv",subscriptions_memberships,Streaming
+230,SLING_TV,"sling tv,slingtv,sling*tv",subscriptions_memberships,Streaming
+231,FUBO_TV,"fubo tv,fubotv,fubo*tv",subscriptions_memberships,Streaming
+232,TIDAL,"tidal,tidal music,tidal*",subscriptions_memberships,Music Streaming
+233,PANDORA,"pandora,pandora plus,pandora*",subscriptions_memberships,Music Streaming
+234,SOUNDCLOUD,"soundcloud,sound cloud,soundcloud*",subscriptions_memberships,Music Streaming
+235,PCLOUD,"pcloud,pcloud.com,pcloud*",subscriptions_memberships,Cloud Storage
+236,SYNC_COM,"sync.com,sync,sync*",subscriptions_memberships,Cloud Storage
+237,BOX,"box,box.com,box*",subscriptions_memberships,Cloud Storage
+238,BACKBLAZE,"backblaze,backblaze.com,backblaze*",subscriptions_memberships,Cloud Storage
+239,CANVA_PRO,"canva pro,canvapro,canva*pro",subscriptions_memberships,Software
+240,NOTION_PLUS,"notion plus,notionplus,notion*plus",subscriptions_memberships,Software
+241,EVERNOTE_PREMIUM,"evernote premium,evernotepremium,evernote*",subscriptions_memberships,Software
+242,LASTPASS,"lastpass,last pass,lastpass*",subscriptions_memberships,Software
+243,1PASSWORD,"1password,one password,1password*",subscriptions_memberships,Software
+244,NORDVPN,"nordvpn,nord vpn,nordvpn*",subscriptions_memberships,VPN
+245,EXPRESSVPN,"expressvpn,express vpn,expressvpn*",subscriptions_memberships,VPN
+246,SURFSHARK,"surfshark,surfshark*",subscriptions_memberships,VPN
+247,MEDIUM,"medium,medium.com,medium membership,medium*",subscriptions_memberships,News/Reading
+248,PATREON,"patreon,patreon.com,patreon*",subscriptions_memberships,Content Platform
+249,GITHUB_PRO,"github pro,github premium,github*pro",subscriptions_memberships,Software
+250,SLACK_PREMIUM,"slack premium,slack plus,slack*premium",subscriptions_memberships,Software
+251,ZOOM_PRO,"zoom pro,zoom premium,zoom*pro",subscriptions_memberships,Software
+252,ASANA_PREMIUM,"asana premium,asana pro,asana*",subscriptions_memberships,Software
+253,TRELLO_PREMIUM,"trello premium,trello plus,trello*",subscriptions_memberships,Software
+254,NY_TIMES,"new york times,nytimes,ny times,nyt,newyorktimes",subscriptions_memberships,News/Reading
+255,WSJ,"wall street journal,wsj,wallstreetjournal,wall*street*journal",subscriptions_memberships,News/Reading
+256,WASHINGTON_POST,"washington post,washingtonpost,wapo,washington*post",subscriptions_memberships,News/Reading
+257,ECONOMIST,"the economist,economist,economist.com,economist*",subscriptions_memberships,News/Reading
+258,KINDLE_UNLIMITED,"kindle unlimited,kindleunlimited,kindle*unlimited",subscriptions_memberships,Reading
+259,SCRIBD,"scribd,scribd.com,scribd*",subscriptions_memberships,Reading
+260,BLINKIST,"blinkist,blinkist.com,blinkist*",subscriptions_memberships,Reading
+261,PELOTON,"peloton,peloton membership,peloton*",subscriptions_memberships,Fitness
+262,APPLE_FITNESS,"apple fitness+,apple fitness,apple*fitness",subscriptions_memberships,Fitness
+263,BEACHBODY,"beachbody,beachbody on demand,beachbody*",subscriptions_memberships,Fitness
+264,AAPTIV,"aaptiv,aaptiv*",subscriptions_memberships,Fitness
+265,FITBIT_PREMIUM,"fitbit premium,fitbitpremium,fitbit*",subscriptions_memberships,Fitness
+266,STRAVA_SUMMIT,"strava summit,strava premium,strava*",subscriptions_memberships,Fitness
+267,PLAYSTATION_PLUS,"playstation plus,ps plus,playstation*plus,psplus",subscriptions_memberships,Gaming
+268,XBOX_GAMEPASS,"xbox game pass,xbox gamepass,gamepass,game*pass",subscriptions_memberships,Gaming
+269,NINTENDO_ONLINE,"nintendo switch online,nintendo online,nintendo*online",subscriptions_memberships,Gaming
+270,EA_PLAY,"ea play,eaplay,ea*play",subscriptions_memberships,Gaming
+271,UBISOFT_PLUS,"ubisoft+,ubisoft plus,ubisoft*",subscriptions_memberships,Gaming
+272,DISCORD_NITRO,"discord nitro,discordnitro,discord*nitro",subscriptions_memberships,Gaming
+273,TWITCH_TURBO,"twitch turbo,twitchturbo,twitch*turbo",subscriptions_memberships,Gaming
+274,COURSERA_PLUS,"coursera plus,courseraplus,coursera*plus",subscriptions_memberships,Learning
+275,UDEMY_BUSINESS,"udemy business,udemybusiness,udemy*business",subscriptions_memberships,Learning
+276,LINKEDIN_LEARNING,"linkedin learning,linkedinlearning,linkedin*learning",subscriptions_memberships,Learning
+277,SKILLSHARE,"skillshare,skillshare premium,skillshare*",subscriptions_memberships,Learning
+278,MASTERCLASS,"masterclass,master class,masterclass*",subscriptions_memberships,Learning
+279,DUOLINGO_PLUS,"duolingo plus,duolingoplus,duolingo*",subscriptions_memberships,Learning
+280,BABBEL,"babbel,babbel.com,babbel*",subscriptions_memberships,Learning
+281,ROSETTA_STONE,"rosetta stone,rosettastone,rosetta*stone",subscriptions_memberships,Learning
+282,COSTCO_MEMBERSHIP,"costco membership,costco,costco*membership",subscriptions_memberships,Membership
+283,SAMS_CLUB,"sams club,sam's club,samsclub,sams*club",subscriptions_memberships,Membership
+284,AAA_MEMBERSHIP,"aaa,aaa membership,aaa*",subscriptions_memberships,Membership
+285,24_HOUR_FITNESS,"24 hour fitness,24hour fitness,24*hour*fitness",subscriptions_memberships,Gym
+286,PLANET_FITNESS,"planet fitness,planetfitness,planet*fitness",subscriptions_memberships,Gym
+287,LA_FITNESS,"la fitness,lafitness,la*fitness",subscriptions_memberships,Gym
+288,EQUINOX,"equinox,equinox gym,equinox*",subscriptions_memberships,Gym
+289,CLASSPASS,"classpass,class pass,classpass*",subscriptions_memberships,Fitness
+290,HEADSPACE,"headspace,headspace.com,headspace*",subscriptions_memberships,Wellness
+291,CALM,"calm,calm.com,calm*",subscriptions_memberships,Wellness
+292,BETTERHELP,"betterhelp,better help,betterhelp*",subscriptions_memberships,Wellness
+200,NETFLIX,"netflix,netflix.com,netflix*,netflx",subscriptions_memberships,Streaming Services
+201,SPOTIFY,"spotify,spotify.com,spotify premium,spotfy",subscriptions_memberships,Music Streaming
+202,YOUTUBE_PREMIUM,"youtube premium,youtube,yt premium",subscriptions_memberships,Streaming Services
+203,AMAZON_PRIME,"amazon prime,prime video,amazon video,prime",subscriptions_memberships,Streaming Services
+204,BEST_BUY,"best buy,bestbuy,best buy*",electronics_technology,Electronics
+205,TESLA_SUPERCHARGER,"tesla supercharger,tesla charging,supercharger",fuel,Electric Charging
+206,STATE_FARM,"state farm,statefarm,state farm insurance",insurance,Auto Insurance
+207,COSTCO_GAS,"costco gas,costco fuel,costco gasoline",fuel,Gas Station
+208,COSTCO,"costco,costco wholesale,costco*",groceries,Wholesale
+209,CHIPOTLE,"chipotle,chipotle mexican grill",food_dining,Fast Food
+210,WHOLE_FOODS,"whole foods,whole foods market,wholefoods",groceries,Organic
+211,PLAYSTATION,"playstation,playstation plus,ps plus,psn",subscriptions_memberships,Gaming
+306,VENMO,"venmo,venmo*,venmo payment",transfers_upi,P2P
+307,KHAN_ACADEMY,"khan academy,khanacademy,khan academy*",education,Online Courses
+308,CVS_PHARMACY,"cvs,cvs pharmacy,cvs*",health,Pharmacy
+309,WALGREENS,"walgreens,walgreens pharmacy,walgreen",health,Pharmacy
+310,DELTA_AIRLINES,"delta,delta airlines,delta air lines",travel,Flights
+311,UNITED_AIRLINES,"united,united airlines,united air",travel,Flights
+312,MARRIOTT,"marriott,marriott hotel,marriott*",travel,Hotels
+313,AMC_THEATRES,"amc,amc theatres,amc theaters",entertainment,Movies
+314,TARGET,"target,target store,target*",shopping,Retail
+315,WALMART,"walmart,walmart store,walmart*",groceries,Supermarkets
+316,HOME_DEPOT,"home depot,homedepot,home depot*",home_improvement,Hardware
+317,LOWES,"lowes,lowe's,lowes*",home_improvement,Hardware
+318,PETSMART,"petsmart,pet smart,petsmart*",pets,Pet Supplies
+319,TOYS_R_US,"toys r us,toysrus,toys r us*",kids_family,Toys
+320,SEPHORA,"sephora,sephora*",personal_care,Beauty
+321,FIDELITY,"fidelity,fidelity investments,fidelity*",investments,Investments
+322,RED_CROSS,"red cross,american red cross,redcross",charity_donations,Charity
+323,UNICEF,"unicef,unicef*",charity_donations,Charity
+324,GEICO,"geico,geico insurance,geico*",insurance,Insurance
+325,VERIZON,"verizon,verizon wireless,verizon*",bills,Telecom
+326,COMCAST,"comcast,comcast cable,xfinity",bills,Internet
+327,PGE,"pge,pg&e,pacific gas electric",bills,Utilities
+328,IRS,"irs,internal revenue service,irs payment",taxes_government,Tax Payment
+329,HARVARD,"harvard,harvard university,harvard*",education,University
+330,LYFT,"lyft,lyft ride,lyft*",transport,Ride Share
+331,TESLA_SERVICE,"tesla service,tesla service center",automotive,Vehicle Service
+332,LAW_OFFICE,"law office,legal office,attorney office",professional_services,Legal
+333,APPLE_DIVIDEND,"apple inc,apple dividend,aapl",investments,Dividends
+330,YO_DIMSUM,"yo dimsum,yodimsum,yo dimsum sec 57,yo dim sum",food_dining,Restaurants
+331,SIRAJ_PAN_SHOP,"siraj pan shop,siraj pan,siraj,pan shop",food_dining,Fast Food
+332,SANGAM_MEGA_MART,"sangam mega mart,m s sangam mega mart,sangam mart,ms sangam",groceries,Supermarkets
+333,ZEPTO_MARKETPLACE,"zepto marketplace,zepto marketplace private limited,zepto",groceries,Online Grocery
+334,BLINKIT,"blinkit,grofers,blink it,blinkit*",groceries,Online Grocery
+335,UBER_INDIA,"uber india,uber india systems,uber india systems private limited,uber,uber*",transport,Cab Services
+336,IRCTC_TOURISM,"irctctourism,irctc tourism,irctc_app_upi,irctc app,irctc",travel,Trains
+337,URBAN_COMPANY,"urban company,urbancompany,urban company limited,urbanclap",personal_care,Salon & Spa
+338,BALAJEE_FILLING_STATION,"shree balajee filling station,balajee filling,balajee petrol,shree balajee",fuel,Petrol
+339,SAUMYA_CHEMIST,"saumya chemist,saumya pharmacy,saumya",health,Pharmacy/Medicine
+340,RAKESH_PAN_SHOP,"rakesh pan shop,rakesh pan,rakesh pan shop 2",food_dining,Fast Food
+341,PANDEY_PAN_SHOP,"pandey pan shop,pandey pan",food_dining,Fast Food
+342,RAJESH_PAN_SHOP,"rajesh pan shop,rajesh pan",food_dining,Fast Food
+343,NARAYAN_KIRANA,"narayan kirana store,narayan kirana,kirana store",groceries,Local Stores
+344,AMIT_CEMENT,"amit cement suppliers,amit cement,cement supplier",home_improvement,Home Repairs
+345,KISHAN_OMLET,"kishan omlet shop,kishan omlet,omlet shop",food_dining,Fast Food
+346,PANDEY_TEA_STALL,"pandey tea stall,pandey tea stall 2,pandey tea,tea stall",food_dining,Cafes & Coffee
+347,BADNAAM_CHAI,"badnaam chay,badnam chai,badnaam chai,badnam chay",food_dining,Cafes & Coffee
+348,KANCHAN_JALPAAN,"kanchan jalpaan ghrah,kanchan jalpaan,jalpaan ghrah",food_dining,Restaurants
+349,MISHRA_PHOTOGRAPHY,"mishra photography,mishra photo",professional_services,Professional Membership
+350,GOOGLE,"google,google india,google storage,google one,google play,google services",subscriptions_memberships,Cloud Storage
+351,GOOGLE_INDIA,"google india,google ind,google.in",subscriptions_memberships,Cloud Storage
+352,CRED_BILLS,"cred,cred.club,cred pay,cred app",bills,Credit Card Bills
+353,PERSON_NAMES_UPI,"om yadav,vikas,neetu,rahul,aman,priya,shivam,manish,ajay,akshay",transfers_upi,Peer to Peer
+355,CHEVRON,"chevron,chevron gas,chevron station,chevron*",fuel,Petrol/Diesel
+356,LYFT,"lyft,lyft ride,lyft*",transport,Cab Services
+357,GRUBHUB,"grubhub,grub hub,grubhub*",food_dining,Food Delivery
+358,CHEESECAKE_FACTORY,"cheesecake factory,the cheesecake factory,cheesecake*",food_dining,Restaurants
+359,ATT,"at&t,att,at & t,att*,at&t*",bills,Telecom
+360,VERIZON,"verizon,verizon wireless,vzw,verizon*",bills,Telecom
+361,COMCAST,"comcast,comcast cable,xfinity,comcast*",bills,Telecom
+362,GYM_24HOUR,"24 hour fitness,24hr fitness,24 hour,24hour*",personal_care,Fitness
+363,DENTAL_ASSOCIATES,"dental associates,dental,dentist",health,Dental
+364,EXXON,"exxon,exxon mobil,exxonmobil,exxon*",fuel,Petrol/Diesel
+365,MOBIL,"mobil,mobil gas,mobil*",fuel,Petrol/Diesel
+366,BP,"bp,bp gas,bp station,bp*",fuel,Petrol/Diesel

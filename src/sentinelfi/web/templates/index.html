@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ app_name }} Control Room</title>
+    <script>
+      (function () {
+        try {
+          var saved = window.localStorage.getItem("sentinelfi.theme");
+          if (saved === "dark" || saved === "light") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (_e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+    <main class="layout">
+      <!-- ───── HEADER ───── -->
+      <header class="hero">
+        <div>
+          <p class="eyebrow">VittaAI</p>
+          <h1>Leakage Command Center</h1>
+          <p class="subhead">
+            Run audits, catch waste in real time, and ship cleanup actions with approval controls.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <div class="hero-row">
+            <label class="api-key-input">
+              <span>API Key</span>
+              <input id="apiKeyInput" type="password" placeholder="Optional for protected /v1 routes" />
+            </label>
+            <button id="saveApiKeyBtn" class="btn btn-secondary" type="button">Save Key</button>
+          </div>
+          <div class="hero-row">
+            <button id="adminSettingsBtn" class="btn btn-secondary" type="button">Admin Settings</button>
+            <button id="darkModeToggle" class="btn btn-icon" type="button" title="Toggle theme" aria-label="Toggle dark/light theme">
+              <span class="icon-sun">&#9788;</span>
+              <span class="icon-moon">&#9790;</span>
+            </button>
+            <div id="toast" class="toast" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ───── TOP ROW: INGEST + RUNTIME ───── -->
+      <section class="grid top-grid">
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#128229;</span>
+            Ingest Data
+          </h2>
+          <form id="uploadForm" class="stack">
+            <label class="field">
+              <span>Upload statement (CSV/PDF)</span>
+              <input id="statementFile" type="file" accept=".csv,.pdf" required />
+            </label>
+            <button class="btn btn-primary" type="submit">Upload Statement</button>
+            <p id="uploadResult" class="muted"></p>
+          </form>
+          <hr />
+          <form id="auditForm" class="stack">
+            <label class="field">
+              <span>Source Type</span>
+              <select id="sourceType">
+                <option value="csv">CSV</option>
+                <option value="pdf">PDF</option>
+                <option value="stripe">Stripe</option>
+                <option value="razorpay">Razorpay</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Source Path</span>
+              <input id="sourcePath" type="text" placeholder="data/uploads/statement.csv" />
+            </label>
+            <label class="field">
+              <span>Source Config (JSON)</span>
+              <textarea id="sourceConfig" rows="3" placeholder='{"account_id":"acct_123"}'></textarea>
+            </label>
+            <div class="field-row">
+              <label class="field flex-1">
+                <span>Client Name</span>
+                <input id="clientName" type="text" value="Demo SMB" />
+              </label>
+              <label class="field flex-1">
+                <span>Report Period</span>
+                <input id="reportPeriod" type="text" value="Last 90 days" />
+              </label>
+            </div>
+            <div class="field-row">
+              <label class="inline-check">
+                <input id="generatePdf" type="checkbox" checked />
+                <span>PDF report</span>
+              </label>
+              <label class="inline-check">
+                <input id="generateMarkdown" type="checkbox" checked />
+                <span>Markdown report</span>
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Launch Audit Job</button>
+            <div id="auditProgress" class="progress-bar" hidden>
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p id="auditStatus" class="muted"></p>
+          </form>
+        </article>
+
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#9881;</span>
+            Runtime + Pipeline
+          </h2>
+          <div class="pipeline" id="pipelineState">
+            <div class="node" data-node="ingest">Ingestor</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="route">Routing</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="ml">ML</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="slm">SLM</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="llm">LLM</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="gst">GST</div>
+            <div class="pipe-arrow">&rarr;</div>
+            <div class="node" data-node="cleanup">Cleanup</div>
+          </div>
+          <div id="runtimeStats" class="runtime-grid"></div>
+
+          <hr />
+          <h3 class="sub-heading">Audit History</h3>
+          <div id="auditHistory" class="audit-history-list">
+            <p class="muted">Loading history&hellip;</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel reveal wide-panel" id="adminSettingsPanel" hidden>
+        <h2>
+          <span class="panel-icon">&#9881;</span>
+          Admin Runtime Settings
+        </h2>
+        <p class="muted">Admin API key required. Edit JSON and save runtime configuration.</p>
+        <div class="stack">
+          <textarea id="adminSettingsJson" rows="16" class="mono"></textarea>
+          <div class="hero-row">
+            <button id="adminSettingsRefreshBtn" class="btn btn-secondary" type="button">Refresh</button>
+            <button id="adminSettingsSaveBtn" class="btn btn-primary" type="button">Save Settings</button>
+          </div>
+          <p id="adminSettingsResult" class="muted"></p>
+        </div>
+      </section>
+
+      <!-- ───── SUMMARY + CATEGORY DONUT ───── -->
+      <section class="grid middle-grid">
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#128202;</span>
+            Leakage Snapshot
+          </h2>
+          <div id="summaryCards" class="cards"></div>
+          <p id="reportPaths" class="mono muted"></p>
+
+          <div class="export-bar" id="exportBar" hidden>
+            <span class="muted">Export:</span>
+            <button class="btn btn-sm btn-secondary" data-export="csv">CSV</button>
+            <button class="btn btn-sm btn-secondary" data-export="quickbooks_iif">QuickBooks</button>
+            <button class="btn btn-sm btn-secondary" data-export="xero_csv">Xero</button>
+            <button class="btn btn-sm btn-secondary" data-export="json">JSON</button>
+          </div>
+        </article>
+
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#127856;</span>
+            Category Breakdown
+          </h2>
+          <div class="donut-container">
+            <div class="donut-chart" id="donutChart">
+              <div class="donut-center" id="donutCenter">
+                <span class="donut-total" id="donutTotal">0</span>
+                <span class="donut-label">transactions</span>
+              </div>
+            </div>
+            <div class="donut-legend" id="donutLegend">
+              <p class="muted">Run an audit to see category distribution.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ───── FINDINGS + GST ───── -->
+      <section class="grid bottom-grid">
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#128270;</span>
+            Leak Findings
+          </h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Severity</th>
+                  <th>Impact</th>
+                  <th>Confidence</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody id="findingsBody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#127987;</span>
+            GST Sentinel
+          </h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tx ID</th>
+                  <th>Issue</th>
+                  <th>ITC Opportunity</th>
+                </tr>
+              </thead>
+              <tbody id="gstBody"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <!-- ───── CLASSIFICATION DECISIONS ───── -->
+      <section class="panel reveal wide-panel">
+        <h2>
+          <span class="panel-icon">&#128200;</span>
+          Classification Decisions
+          <span class="badge" id="decisionCount">0</span>
+        </h2>
+        <div class="decisions-toolbar">
+          <input id="decisionSearch" type="search" placeholder="Filter by tx id, category, classifier..." class="search-input" />
+          <select id="decisionFilter">
+            <option value="">All</option>
+            <option value="review">Needs Review</option>
+            <option value="business">Business</option>
+            <option value="personal">Personal</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table class="decisions-table">
+            <thead>
+              <tr>
+                <th>Tx ID</th>
+                <th>Category</th>
+                <th>Classifier</th>
+                <th>Confidence</th>
+                <th>Route</th>
+                <th>Review</th>
+              </tr>
+            </thead>
+            <tbody id="decisionsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ───── CLEANUP + FEEDBACK ───── -->
+      <section class="grid bottom-grid">
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#128465;</span>
+            Cleanup Agent
+          </h2>
+          <form id="cleanupForm" class="stack">
+            <div id="cleanupTasks" class="stack"></div>
+            <button class="btn btn-danger" type="submit">Execute Approved Cleanup</button>
+            <p id="cleanupResult" class="muted"></p>
+          </form>
+        </article>
+
+        <article class="panel reveal">
+          <h2>
+            <span class="panel-icon">&#128218;</span>
+            Active Learning Feedback
+          </h2>
+          <p class="muted">
+            Correct review-required classifications to retrain the ML classifier over time.
+          </p>
+          <form id="feedbackForm" class="stack">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tx ID</th>
+                    <th>Current</th>
+                    <th>Confidence</th>
+                    <th>Correction</th>
+                  </tr>
+                </thead>
+                <tbody id="feedbackBody"></tbody>
+              </table>
+            </div>
+            <button class="btn btn-secondary" type="submit">Submit Feedback</button>
+            <p id="feedbackResult" class="muted"></p>
+          </form>
+        </article>
+      </section>
+
+      <!-- ───── MERCHANT LOOKUP ───── -->
+      <section class="panel reveal wide-panel">
+        <h2>
+          <span class="panel-icon">&#128717;</span>
+          Merchant Lookup
+        </h2>
+        <form id="merchantForm" class="merchant-form">
+          <input id="merchantQuery" type="search" placeholder="Search merchant by transaction text..." class="search-input flex-1" />
+          <button class="btn btn-primary" type="submit">Resolve</button>
+        </form>
+        <div id="merchantResults" class="merchant-results"></div>
+      </section>
+    </main>
+
+    <script src="/assets/app.js" defer
+            data-api-base="{{ api_base }}"
+            data-app-name="{{ app_name }}"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+tx_id,tx_date,description,amount,currency,is_debit,merchant,account_id,mcc_code
+ui_tx_0001,2026-01-02,UPI/400112233445/ZOOM*USAGE@okhdfcbank SaaS monthly plan,4999.00,INR,true,zoom,biz_acc_01,5734
+ui_tx_0002,2026-01-03,UPI/400112233446/GOOGLE*WORKSPACE@oksbi annual subscription,12999.00,INR,true,google workspace,biz_acc_01,5734
+ui_tx_0003,2026-01-04,RAZORPAY*PAYROLL JAN 2026,185000.00,INR,true,razorpay,biz_acc_01,6012
+ui_tx_0004,2026-01-05,UPI/400112233447/SWIGGY@ybl team lunch client meeting,2450.00,INR,true,swiggy,biz_acc_01,5812
+ui_tx_0005,2026-01-06,UPI/400112233448/NETFLIX@okicici home entertainment,649.00,INR,true,netflix,biz_acc_01,4899
+ui_tx_0006,2026-01-07,ACH DR AWS INDIA CLOUD SERVICES INV-8821,21875.00,INR,true,aws,biz_acc_01,5734
+ui_tx_0007,2026-01-08,UPI/400112233449/ZOOM*USAGE@okhdfcbank duplicate license,4999.00,INR,true,zoom,biz_acc_01,5734
+ui_tx_0008,2026-01-09,UPI/400112233450/SLACK*TECH@okaxis collaboration tool,7420.00,INR,true,slack,biz_acc_01,5734
+ui_tx_0009,2026-01-10,UPI/400112233451/GOOGLE*MEET@okaxis meetings add-on,3999.00,INR,true,google meet,biz_acc_01,5734
+ui_tx_0010,2026-01-11,UPI/400112233452/AMAZON@apl office monitors and keyboard,18750.00,INR,true,amazon,biz_acc_01,5942
+ui_tx_0011,2026-01-12,UPI/400112233453/PERSONALTRANSFER@okhdfcbank Rahul,6000.00,INR,true,,biz_acc_01,4829
+ui_tx_0012,2026-01-13,CARD CR CLIENT PAYMENT ACME RETAINER,85000.00,INR,false,acme client,biz_acc_01,7399
+ui_tx_0013,2026-01-14,UPI/400112233454/NOTION*TEAM@okaxis wiki subscription,2899.00,INR,true,notion,biz_acc_01,5734
+ui_tx_0014,2026-01-15,UPI/400112233455/FREE-TRIAL-CONVERT*CRM@oksbi auto renewal,8999.00,INR,true,crm trial,biz_acc_01,5734
+ui_tx_0015,2026-01-16,BANK CHARGES IMPS/NEFT/ACCOUNT MAINTENANCE,640.00,INR,true,bank charges,biz_acc_01,6011
+ui_tx_0016,2026-01-17,UPI/400112233456/GST PAYMENT CHALLAN PMT,26000.00,INR,true,gst portal,biz_acc_01,9311
+ui_tx_0017,2026-01-18,UPI/400112233457/ADOBE*CREATIVE@okicici design suite,4299.00,INR,true,adobe,biz_acc_01,5734
+ui_tx_0018,2026-01-19,UPI/400112233458/OPENAI*API@okaxis model usage,11780.00,INR,true,openai,biz_acc_01,5734
+ui_tx_0019,2026-01-20,ACH DR OFFICE RENT JAN 2026,45000.00,INR,true,landlord,biz_acc_01,6513
+ui_tx_0020,2026-01-21,UPI/400112233459/UBER@ybl airport transfer client visit,1890.00,INR,true,uber,biz_acc_01,4121

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "generated_at": "2026-02-13T00:00:00Z",
+  "datasets": {
+    "andyrasika_procurement_csv": {
+      "url": "https://huggingface.co/datasets/Andyrasika/bank_transactions/resolve/main/labelled_transactions.csv?download=true",
+      "sha256": "7a653808b74d1ddfa76f4fb94df2630c06f6e52618f9a4d267cbaf6ebd21b89a",
+      "size_bytes": 8247
+    },
+    "alok_financial_transactions_csv": {
+      "url": "https://huggingface.co/datasets/alokkulkarni/financial_Transactions/resolve/main/transactions.csv?download=true",
+      "sha256": "18fcac7ce34029440bad34279257dd39888b361bf29fac8a3a39d2fdd66c47f8",
+      "size_bytes": 22394
+    },
+    "rajesh_transaction_category_train_parquet": {
+      "url": "https://huggingface.co/datasets/rajeshradhakrishnan/fin-transaction-category/resolve/main/data/train-00000-of-00001.parquet?download=true",
+      "sha256": "a9756b014290a38f9e459154cc066523720e1e7d3538f85017811a588d456d20",
+      "size_bytes": 4558
+    },
+    "rajesh_transaction_category_test_parquet": {
+      "url": "https://huggingface.co/datasets/rajeshradhakrishnan/fin-transaction-category/resolve/main/data/test-00000-of-00001.parquet?download=true",
+      "sha256": "86b9c51fe204ce6bbdb54876a9aeeacf65657919d372fdd6e147c97be5e9707a",
+      "size_bytes": 2751
+    }
+  }
+}
