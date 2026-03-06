@@ -251,6 +251,12 @@ Cleanup execution supports real integrations when enabled:
   - `CLEANUP_INVOICE_WEBHOOK_URL`
   - `CLEANUP_GST_WEBHOOK_URL`
 
+## March 2026 Refresh
+
+- Public-safe copy reviewed before publication
+- Full automated test suite re-run successfully
+- Repository metadata polished for public presentation
+
 ## Sample audit request
 
 ```json
