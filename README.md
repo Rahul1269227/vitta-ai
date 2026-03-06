@@ -1,11 +1,29 @@
 # Sentinel-Fi
 
-Production-ready starter for an agentic financial leakage platform that moves from:
-1. `Audit` (find ghost money)
-2. `Cleanup` (approval-gated write actions)
-3. `Strategy` (ready extension path)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![FastAPI](https://img.shields.io/badge/framework-FastAPI-009688)
+![Tests](https://img.shields.io/badge/tests-109%20passed-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Built with `FastAPI + LangGraph + SQLModel` and optimized for Indian SMB finance/GST workflows.
+Agentic financial leakage auditing platform for transaction review, anomaly detection, approval-gated cleanup, and GST-oriented finance workflows.
+
+Built with `FastAPI + LangGraph + SQLModel`, with a practical focus on Indian SMB finance operations.
+
+## Why this repo matters
+
+Sentinel-Fi is designed as a portfolio-grade systems project, not just a notebook or single-model demo. It combines:
+
+- workflow orchestration for audit and cleanup decisions
+- structured backend services with persistence and migrations
+- multiple classification strategies and fallbacks
+- report generation and operational controls
+- a large automated test suite for confidence in behavior
+
+## Product flow
+
+1. `Audit`: ingest statements and identify likely leakage, anomalies, and tax issues
+2. `Cleanup`: prepare approval-gated follow-up actions for finance operations
+3. `Strategy`: provide a foundation for broader finance automation workflows
 
 ## What is implemented
 
@@ -77,6 +95,13 @@ Cleanup Graph (separate, paid tier)
 ```
 
 Reference integration details: `docs/REFERENCE_INTEGRATION.md`
+
+## Demo paths
+
+- Run the sample audit end to end with `uv run python scripts/run_sample_audit.py`
+- Start the API locally with `make runserver`
+- Open the control room UI at `http://localhost:8000/`
+- Inspect the generated markdown and PDF artifacts under `output/`
 
 ## Quick start
 
